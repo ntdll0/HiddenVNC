@@ -1,6 +1,6 @@
 ![banner (3)](https://github.com/ntdll0/HiddenVNC/assets/164230949/23e37b1e-c304-4a3d-81eb-88f6fec4cada)
 # Hidden VNC
-My own unique conceptual implementation of technique called HVNC (Hidden VNC or sometimes also Hidden Desktop).<br>
+My own unique conceptual implementation of HVNC technique (known also as Hidden VNC or sometimes also Hidden Desktop).<br>
 > Client written in C++ with use of OpenCV for JPEG encoding and image resizing and WinSock for networking.<br>
 > Server written in C# without use of any 3D party libraries.<br>
 
