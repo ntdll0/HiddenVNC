@@ -9,8 +9,7 @@ We are using a safe queue system with mutex for synchronization between threads.
 In order to save some traffic, we are comparing each new MAT with previous one with a treshold that can be changed in settings.<br>
 In server settings, we can configure things such as image quality (resize), JPEG compression quality, input cooldown (for receiving commands, keyboard events and mouse clicks) and process cooldown (between sending frames).<br>
 Networking is quite simple here, as it's not main focus of this POC, but yet still produces some tolerable results.
-<center>![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/91a010f0-6e45-4c81-8c7d-28e197b532be)</center>
-<center></center>![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/a55c0af4-333b-4f04-b047-3a95c536f420)</center>
+![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/91a010f0-6e45-4c81-8c7d-28e197b532be)
 
 ## What is HVNC?
 HVNC, standing for "Hidden Virtual Network Computing" is a 
@@ -18,6 +17,8 @@ technique deployed allowing hidden stealthy remote control
 with an experience similar to classic old fashioned remote desktop.
 The main difference here is, that everything is on (for user invisible) virtual desktop.
 Creating a virtual desktop is part of a feature that dates back to the days of windows XP, when it was first added.
+
+![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/a55c0af4-333b-4f04-b047-3a95c536f420)
 
 A classic VNC usually interacts with remote client simply by emulating mouse clicks on a specific coordinates.
 However given the fact that the desktop is not set as active one in the time we are working with it, 
