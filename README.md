@@ -10,6 +10,7 @@ In order to save some traffic, we are comparing each new MAT with previous one w
 In server settings, we can configure things such as image quality (resize), JPEG compression quality, input cooldown (for receiving commands, keyboard events and mouse clicks) and process cooldown (between sending frames).<br>
 Networking is quite simple here, as it's not main focus of this POC, but yet still produces some tolerable results.
 ![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/91a010f0-6e45-4c81-8c7d-28e197b532be)
+![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/a55c0af4-333b-4f04-b047-3a95c536f420)
 
 ## What is HVNC?
 HVNC, standing for "Hidden Virtual Network Computing" is a 
