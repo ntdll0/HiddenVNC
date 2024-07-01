@@ -27,7 +27,7 @@ Because of that, things are gonna get here a bit more complicated.
 Crafting a fully fledged proof of concept requires us to write our own window manager,
 enumerate windows belonging to our virtual desktop an manually paint each one on a bitmap by their Z order.
 In order to emulate a mouse click, we have to use functions such as SendMessage or PostMessage,
-manually compute relative coordinates and found a window which lies on coordinates of the click.
+manually compute relative coordinates and find a window which lies on coordinates of the click.
 
 ## Here, I provide a list of commonly used WINAPI functions and their use in our implementation:
 `CreateDesktop` - Creates a new virtual workstation with custom name<br>
