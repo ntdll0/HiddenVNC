@@ -48,6 +48,10 @@ As always, you take full responsibility from usage of this code on your own.<br>
 Code here is provided strictly for academical, research and ethical purposes.<br>
 I am publishing a release here, configured only for local connection and with a prompt on each start informing the user.<br>
 
+## References
+ - https://icons8.com for used icons
+ - https://learn.microsoft.com/en-us/windows/win32/api/winuser - official documentation
+
 ### Note
 > Code licensed under Gnu General Public License V3 https://www.gnu.org/licenses/gpl-3.0.en.html<br>
 > You are allowed to fork this repo, I will be happy for any new ideas<br>
