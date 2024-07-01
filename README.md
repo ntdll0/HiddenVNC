@@ -45,4 +45,4 @@ Code here is provided strictly for academical, research and ethical purposes.<br
 I am publishing a release here, configured only for local connection and with a prompt on each start informing the user.<br>
 
 ### Note
-> Code licensed under 
+> Code licensed under Gnu General Public License V3 https://www.gnu.org/licenses/gpl-3.0.en.html
