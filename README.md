@@ -50,3 +50,5 @@ I am publishing a release here, configured only for local connection and with a 
 
 ### Note
 > Code licensed under Gnu General Public License V3 https://www.gnu.org/licenses/gpl-3.0.en.html
+> You are allowed to fork this repo, I will be happy for any new ideas
+> If you are using this code somewhere, please make sure you comply with license
