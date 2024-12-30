@@ -1,8 +1,8 @@
 ![banner (3)](https://github.com/ntdll0/HiddenVNC/assets/164230949/23e37b1e-c304-4a3d-81eb-88f6fec4cada)
 # Hidden VNC
-My own unique conceptual implementation of HVNC technique (known also as Hidden VNC or sometimes also Hidden Desktop).<br>
-> Client written in C++ with use of OpenCV for JPEG encoding and image resizing and WinSock for networking.<br>
-> Server written in C# without use of any 3D party libraries.<br>
+My own implementation of HVNC (known also as HiddenVNC / Hidden Desktop).<br>
+> Client written in C++ with use of OpenCV for JPEG encoding, image resizing and WinSock for networking.<br>
+> Server written in C# without use of any 3d party libraries.<br>
 
 **About Functionality**<br>
 We are using a safe queue system with mutex for synchronization between threads.<br>
@@ -12,21 +12,21 @@ Networking is quite simple here, as it's not main focus of this POC, but yet sti
 ![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/91a010f0-6e45-4c81-8c7d-28e197b532be)
 
 ## What is HVNC?
-HVNC, standing for "Hidden Virtual Network Computing" is a 
-technique deployed allowing hidden stealthy remote control
-with an experience similar to classic old fashioned remote desktop.
+HVNC, which stands for "Hidden Virtual Network Computing" is a 
+technique allowing stealthy remote control
+with an experience similar old fashioned remote desktop.
 The main difference here is, that everything is on (for user invisible) virtual desktop.
-Creating a virtual desktop is part of a feature that dates back to the days of windows XP, when it was first added.
+Creating a virtual desktop is part of old feature that dates back to the days of windows XP.
 
 ![image](https://github.com/ntdll0/HiddenVNC/assets/164230949/a55c0af4-333b-4f04-b047-3a95c536f420)
 
-A classic VNC usually interacts with remote client simply by emulating mouse clicks on a specific coordinates.
-However given the fact that the desktop is not set as active one in the time we are working with it, 
-we are unable to use classic approach as normal VNC's use.
-Because of that, things are gonna get here a bit more complicated.
-Crafting a fully fledged proof of concept requires us to write our own window manager,
-enumerate windows belonging to our virtual desktop an manually paint each one on a bitmap by their Z order.
-In order to emulate a mouse click, we have to use functions such as SendMessage or PostMessage,
+A classic VNC usually interacts with remote client simply by emulating mouse clicks on some specific coordinates.
+However, given the fact that the desktop is not set as active one in the time we are working with it, 
+we are unable to use classic approach as VNC's use.
+Because of that, things are gonna get a bit more complicated.
+Crafting a fully fledged poc requires us to write our own window manager,
+enumerate windows on our virtual desktop an manually paint each one on a bitmap by their Z order.
+For mouse emulation, we have to use functions such as SendMessage or PostMessage,
 manually compute relative coordinates and find a window which lies on coordinates of the click.
 
 ## Here, I provide a list of commonly used WINAPI functions and their use in our implementation:
